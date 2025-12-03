@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Business Proposal",
+    "description": "Structured business proposal for executive stakeholders.",
+    "type": "business",
+    "category": "Business",
+    "tags": ["proposal", "business"],
+    "prompt_template": "You are writing a business proposal for {client_name}. Include problem, solution, ROI, and roadmap.",
+    "variables": [
+      {"name": "client_name", "description": "Name of the prospective client"},
+      {"name": "solution_overview", "description": "High-level description of the solution"}
+    ]
+  },
+  {
+    "name": "Legal Contract",
+    "description": "Baseline legal contract with parties, scope, and obligations.",
+    "type": "legal",
+    "category": "Legal",
+    "tags": ["contract", "legal"],
+    "prompt_template": "Draft a contract between {party_a} and {party_b} with scope, payment terms, and termination clauses.",
+    "variables": [
+      {"name": "party_a", "description": "First party"},
+      {"name": "party_b", "description": "Second party"}
+    ]
+  }
+]

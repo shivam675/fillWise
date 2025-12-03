@@ -1,0 +1,18 @@
+[project]
+name = "ai-template-agent-backend"
+version = "0.1.0"
+description = "FastAPI backend for the AI Template Agent"
+authors = [{name = "AI Template Agent Team"}]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.0",
+    "uvicorn[standard]==0.30.5",
+    "sqlalchemy==2.0.34",
+    "pydantic==2.9.2",
+    "pydantic-settings==2.6.1",
+    "python-multipart==0.0.9",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["app"]
